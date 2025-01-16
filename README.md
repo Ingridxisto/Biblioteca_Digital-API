@@ -27,7 +27,7 @@ O sistema possui um CRUD (Create, Read, Update, Delete) para gerenciar os livros
 ### 1. Clonar o repositório
 Clone este repositório em sua máquina local:
 
-| git clone https://github.com/seu-usuario/biblioteca-digital.git |
+| `git clone https://github.com/seu-usuario/biblioteca-digital.git` |
 |-----------------------------------------------------------------|  
   
 ### 2. Configurar o banco de dados
@@ -48,6 +48,6 @@ No arquivo *application.properties*, configure a conexão com o banco de dados:
 ### 4. Build do projeto  
 Utilize o Maven ou Gradle para rodar o build do projeto:  
 
-| mvn clean install |
+| `mvn clean install` |
 |-------------------|  
 
