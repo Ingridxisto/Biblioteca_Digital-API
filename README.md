@@ -24,5 +24,9 @@ O sistema possui um CRUD (Create, Read, Update, Delete) para gerenciar os livros
 - Navegador de internet para visualizar o frontend  
 
 # Como rodar o projeto
-1. Clonar o repositório
-Clone este repositório em sua máquina local:
+1. Clonar o repositório  
+Clone este repositório em sua máquina local:  
+
+-------------------------------------------------------------------
+| git clone https://github.com/seu-usuario/biblioteca-digital.git |
+|-----------------------------------------------------------------|
