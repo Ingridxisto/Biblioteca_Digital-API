@@ -37,14 +37,13 @@ Caso use H2, configure a aplicação para utilizar o banco em memória (já conf
 ### 3. Configurar variáveis de ambiente (para MySQL)  
 No arquivo *application.properties*, configure a conexão com o banco de dados:  
 
-| spring.datasource.url=jdbc:mysql://localhost:3306/biblioteca_digital |  
-|                                                                      |  
-| spring.datasource.username=seu_usuario                               |  
-|                                                                      |   
-| spring.datasource.password=sua_senha                                 |  
-|                                                                      |   
-| spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver         |    
-|----------------------------------------------------------------------|    
+| Propriedades                                      |
+|--------------------------------------------------|
+| `spring.datasource.url=jdbc:mysql://localhost:3306/biblioteca_digital` |
+| `spring.datasource.username=seu_usuario`         |
+| `spring.datasource.password=sua_senha`           |
+| `spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver` |
+  
 
 ### 4. Build do projeto  
 Utilize o Maven ou Gradle para rodar o build do projeto:  
