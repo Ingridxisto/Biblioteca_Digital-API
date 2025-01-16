@@ -28,7 +28,7 @@ O sistema possui um CRUD (Create, Read, Update, Delete) para gerenciar os livros
 Clone este repositório em sua máquina local:
 
 | git clone https://github.com/seu-usuario/biblioteca-digital.git |
--------------------------------------------------------------------  
+|-----------------------------------------------------------------|  
   
 ### 2. Configurar o banco de dados
 Caso utilize MySQL, crie um banco de dados com o nome biblioteca_digital.  
@@ -41,11 +41,11 @@ No arquivo *application.properties*, configure a conexão com o banco de dados:
 | spring.datasource.username=seu_usuario                               |
 | spring.datasource.password=sua_senha                                 |
 | spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver         |
-------------------------------------------------------------------------  
+|----------------------------------------------------------------------|  
 
 ### 4. Build do projeto  
 Utilize o Maven ou Gradle para rodar o build do projeto:  
 
 | mvn clean install |
---------------------  
+|-------------------|  
 
