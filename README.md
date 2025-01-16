@@ -24,8 +24,28 @@ O sistema possui um CRUD (Create, Read, Update, Delete) para gerenciar os livros
 - Navegador de internet para visualizar o frontend  
 
 # Como rodar o projeto
-1. Clonar o repositório  
+### 1. Clonar o repositório
 Clone este repositório em sua máquina local:
 
 | git clone https://github.com/seu-usuario/biblioteca-digital.git |
-|-----------------------------------------------------------------|
+-------------------------------------------------------------------  
+  
+### 2. Configurar o banco de dados
+Caso utilize MySQL, crie um banco de dados com o nome biblioteca_digital.  
+Caso use H2, configure a aplicação para utilizar o banco em memória (já configurado por padrão no application.properties).  
+
+### 3. Configurar variáveis de ambiente (para MySQL)  
+No arquivo *application.properties*, configure a conexão com o banco de dados:  
+
+| spring.datasource.url=jdbc:mysql://localhost:3306/biblioteca_digital |
+| spring.datasource.username=seu_usuario                               |
+| spring.datasource.password=sua_senha                                 |
+| spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver         |
+------------------------------------------------------------------------  
+
+### 4. Build do projeto  
+Utilize o Maven ou Gradle para rodar o build do projeto:  
+
+| mvn clean install |
+--------------------  
+
