@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Livros</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Biblioteca Digital</h1>
+        <p>Gerencie sua coleção de livros com facilidade!</p>
+    </header>
+
+    <main class="main-content">
+        <section class="form-section">
+            <h2>Cadastrar Livro</h2>
+            <form>
+                <input type="text" id="titleInput" placeholder="Título">
+                <input type="text" id="authorInput" placeholder="Autor">
+                <input type="text" id="genderInput" placeholder="Gênero">
+                <input type="text" id="yearOfPublicationInput" placeholder="Ano de Publicação">
+                <input type="text" id="publisherInput" placeholder="Editora">
+                <input type="text" id="isbnInput" placeholder="ISBN">
+                <input type="text" id="imageInput" accept="image/*" placeholder="URL Imagem">
+
+                <button type="button" onclick="addBook()">Adicionar Livro</button>
+            </form>
+        </section>
+    
+
+        <section class="search-section">
+            <h2>Pesquise o livro que deseja</h2>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Digite o título do livro">
+                <button onclick="searchBook()">Buscar Livro</button>
+                <button onclick="loadCards()">Recarregar Lista</button>
+            </div>
+        </section>
+
+            <h2>Livros Cadastrados</h2>
+        <section id="cardContainer" class="card-container">
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Biblioteca Digital. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
