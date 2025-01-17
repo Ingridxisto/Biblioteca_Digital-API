@@ -27,7 +27,7 @@ O sistema possui um CRUD (Create, Read, Update, Delete) para gerenciar os livros
 ### 1. Clonar o repositório
 Clone este repositório em sua máquina local:
 
-| `git clone https://github.com/seu-usuario/biblioteca-digital.git` |
+| `git clone https://github.com/seu-usuario/biblioteca_digital-API.git` |
 |-----------------------------------------------------------------|  
   
 ### 2. Configurar o banco de dados
@@ -39,10 +39,19 @@ No arquivo *application.properties*, configure a conexão com o banco de dados:
 
 | Propriedades                                      |
 |--------------------------------------------------|
-| `spring.datasource.url=jdbc:mysql://localhost:3306/biblioteca_digital` |
-| `spring.datasource.username=seu_usuario`         |
-| `spring.datasource.password=sua_senha`           |
-| `spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver` |
+| # Configurações do DataSource (MySQL)  |
+| `spring.datasource.url=jdbc:mysql://localhost:3306/db_biblioteca_digital`  |
+| `spring.datasource.username=seu_usuario`  |
+| `spring.datasource.password=sua_senha`  |
+| `spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver`  |  
+|                                                                 |
+| # Configuração do JPA  |
+| `spring.jpa.hibernate.ddl-auto=update`  |
+| `spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect`  |  
+|                                                                    |
+| # Configuração para mostrar as queries SQL  |
+| `spring.jpa.show-sql=true`  |
+| `spring.jpa.properties.hibernate.format_sql=true`  |
   
 
 ### 4. Build do projeto  
