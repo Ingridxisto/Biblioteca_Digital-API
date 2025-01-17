@@ -73,28 +73,28 @@ Ao instalar, irá ter o `Go Live` no canto direito da tela, só clicar e irá ab
 
 # Estrutura do Projeto  
 
-Biblioteca_Digital-API/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── br/
-|   |   |       └── com/
-|   |   |           └── fecaf/
-│   │   │               ├── controller/
-|   |   |                   └── LivroController
-|   |   |               ├── database
-|   |   |                   └── model.sql
-│   │   │               ├── model/
-|   |   |                   └── Livro
-│   │   │               ├── repository/
-|   |   |                   └── LivroRepository
-│   │   │               ├── service/
-│   │   │                   └── LivroService
-|   |   |               ├── App
-│   │   └── resources/
-│   │       ├── application.properties
-├── pom.xml
-└── README.md  
+Biblioteca_Digital-API/  
+├── src/  
+│   ├── main/  
+│   │   ├── java/   
+│   │   │   └── br/  
+|   |   |       └── com/  
+|   |   |           └── fecaf/  
+│   │   │               ├── controller/   
+|   |   |                   └── LivroController  
+|   |   |               ├── database  
+|   |   |                   └── model.sql  
+│   │   │               ├── model/  
+|   |   |                   └── Livro  
+│   │   │               ├── repository/  
+|   |   |                   └── LivroRepository  
+│   │   │               ├── service/  
+│   │   │                   └── LivroService  
+|   |   |               ├── App  
+│   │   └── resources/  
+│   │       ├── application.properties  
+├── pom.xml   
+└── README.md    
 
 ## Licença  
 Este projeto está sob a licença MIT.
