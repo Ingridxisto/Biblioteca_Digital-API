@@ -35,6 +35,23 @@ Clone este repositório em sua máquina local:
 Caso utilize MySQL, crie um banco de dados com o nome biblioteca_digital.  
 Caso use H2, configure a aplicação para utilizar o banco em memória (já configurado por padrão no application.properties).  
 
+| Criação do banco de dados:          |
+|-------------------------------------|
+| CREATE DATABASE db_biblioteca_digital; | 
+|                                        |
+| USE db_biblioteca_digital;             |
+|                                        |
+| CREATE TABLE tbl_livro (               |
+|   id int primary key auto_increment,   |
+|   titulo varchar(255) NOT NULL,        |
+|   autor varchar(255) NOT NULL,         |
+|   genero varchar(100),                 |
+|   ano_publicacao year,                 |
+|   editora varchar(255),                |
+|   isbn varchar(20) unique,             |
+|   foto varchar(255)                    |
+| );                                     |
+
 ### 3. Configurar variáveis de ambiente (para MySQL)  
 No arquivo *application.properties*, configure a conexão com o banco de dados:  
 
