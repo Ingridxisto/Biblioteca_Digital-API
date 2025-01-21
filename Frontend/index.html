@@ -12,6 +12,8 @@
         <p>Gerencie sua coleção de livros com facilidade!</p>
     </header>
 
+    <div id="messageContainer" class="message" style="display: none;"></div>
+
     <main class="main-content">
         <section class="form-section">
             <h2>Cadastrar Livro</h2>
@@ -28,20 +30,33 @@
             </form>
         </section>
     
-
         <section class="search-section">
             <h2>Pesquise o livro que deseja</h2>
             <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Digite o título do livro">
+                <input type="text" id="searchInput" placeholder="Digite o título do livro ou o gênero que deseja pesquisar...">
                 <button onclick="searchBook()">Buscar Livro</button>
                 <button onclick="loadCards()">Recarregar Lista</button>
             </div>
         </section>
 
-            <h2>Livros Cadastrados</h2>
-        <section id="cardContainer" class="card-container">
+        <h2>Livros Cadastrados</h2>
+        <section id="cardContainer" class="card-container todos-livros-section">
+            <div class="card-row" id="booksList">
+                <!-- Livros serão adicionados aqui em grupos de 5 -->
+            </div>
 
+            <!-- Botões "Ver Mais" e "Ver Menos" adicionados aqui -->
+            <div class="buttons-container">
+                <button class="view-more-button">Ver Mais</button>
+                <button class="view-less-button">Ver Menos</button>
+            </div>
         </section>
+
+        <div id="book-container">
+            <h2 id="livros-por-genero-title">Livros por Gênero</h2> <!-- Título fixo aqui -->
+            <div id="book-list" class="book-list"></div> <!-- Lista de livros renderizada dinamicamente -->
+        </div>
+        
     </main>
 
     <footer class="footer">
