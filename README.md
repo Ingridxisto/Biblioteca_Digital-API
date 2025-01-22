@@ -11,7 +11,7 @@ O sistema possui um CRUD (Create, Read, Update, Delete) para gerenciar os livros
 - Atualizar livro: Possibilita a edição de dados de um livro já cadastrado.
 - Remover livro: Remove um livro do sistema.  
   
-# Tecnologias utilizadas:  
+# Tecnologias utilizadas:   
 - Backend: Spring Boot (Java)
 - Banco de Dados: MySQL ou H2 (conforme configuração)
 - Frontend: HTML, CSS, JavaScript (com ou sem framework como Angular/React dependendo da implementação)
@@ -35,42 +35,12 @@ Clone este repositório em sua máquina local:
 Caso utilize MySQL, crie um banco de dados com o nome biblioteca_digital.  
 Caso use H2, configure a aplicação para utilizar o banco em memória (já configurado por padrão no application.properties).  
 
-| Criação do banco de dados:          |
-|-------------------------------------|
-| CREATE DATABASE db_biblioteca_digital; | 
-|                                        |
-| USE db_biblioteca_digital;             |
-|                                        |
-| CREATE TABLE tbl_livro (               |
-|   id int primary key auto_increment,   |
-|   titulo varchar(255) NOT NULL,        |
-|   autor varchar(255) NOT NULL,         |
-|   genero varchar(100),                 |
-|   ano_publicacao year,                 |
-|   editora varchar(255),                |
-|   isbn varchar(20) unique,             |
-|   foto varchar(255)                    |
-| );                                     |
+![Captura de tela 2025-01-21 163005](https://github.com/user-attachments/assets/2dca93ad-b4c1-4fad-a7b9-b1463b9a4279)   
 
 ### 3. Configurar variáveis de ambiente (para MySQL)  
 No arquivo *application.properties*, configure a conexão com o banco de dados:  
 
-| Propriedades                                      |
-|--------------------------------------------------|
-| # Configurações do DataSource (MySQL)  |
-| `spring.datasource.url=jdbc:mysql://localhost:3306/db_biblioteca_digital`  |
-| `spring.datasource.username=seu_usuario`  |
-| `spring.datasource.password=sua_senha`  |
-| `spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver`  |  
-|                                                                 |
-| # Configuração do JPA  |
-| `spring.jpa.hibernate.ddl-auto=update`  |
-| `spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect`  |  
-|                                                                    |
-| # Configuração para mostrar as queries SQL  |
-| `spring.jpa.show-sql=true`  |
-| `spring.jpa.properties.hibernate.format_sql=true`  |
-  
+![Captura de tela 2025-01-21 162534](https://github.com/user-attachments/assets/cb49f1d4-fb3f-46c6-9e80-8490c69d6bf9)   
 
 ### 4. Build do projeto  
 Utilize o Maven ou Gradle para rodar o build do projeto:  
@@ -113,6 +83,10 @@ Biblioteca_Digital-API/
 ├── pom.xml   
 └── README.md
 ```
+
+# Diagrama de Classe   
+
+![Captura de tela 2025-01-17 102032](https://github.com/user-attachments/assets/bb3c8aa1-70b3-4919-9017-ea6c0cf3a916)   
 
 ## Licença  
 Este projeto está sob a licença MIT.
