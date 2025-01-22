@@ -89,7 +89,7 @@ Basta instalar a extensão `Live Server`, usei o VSCODE para o front.
 Ao instalar, irá ter o `Go Live` no canto direito da tela, só clicar e irá abrir a porta 5500.  
 
 # Estrutura do Projeto  
-
+```bash
 Biblioteca_Digital-API/    
 ├── src/   
 │      ├── main/   
@@ -111,8 +111,8 @@ Biblioteca_Digital-API/
 │      │      └── resources/   
 │      │          └── application.properties   
 ├── pom.xml   
-└── README.md   
-  
+└── README.md
+```
 
 ## Licença  
 Este projeto está sob a licença MIT.
